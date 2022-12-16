@@ -1,0 +1,33 @@
+header h1{
+	font-family: serif;
+}
+
+.convt-card{
+	margin-top: 4%;
+}
+
+#result_div, #btn_div, #from_dec_result_div, #decimal_result_hr, #from_dec_btn_div{
+	display: none;
+}
+
+#decimal_result_btn:hover{
+	color:white;
+}
+
+.to-decimal-old-base{
+	width: 12%;
+}
+
+input{
+	border-radius: 5px;
+	border-color: rgb( 195, 210, 250 );
+}
+
+.box-div{
+	box-shadow: 2px 1px 2px 3px rgb( 200, 217, 255 ) ;
+	border-radius: 3px;
+}
+
+footer{
+	margin-top: 120px;
+}
