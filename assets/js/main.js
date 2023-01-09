@@ -1,4 +1,3 @@
-
 function validateNumbers( value, msg_id, field_name, btn_id ) 
 {
 	if ( value.length > 0 ) 

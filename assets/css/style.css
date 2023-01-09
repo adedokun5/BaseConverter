@@ -6,6 +6,21 @@ header h1{
 	margin-top: 4%;
 }
 
+@media screen and ( max-width: 767px ){
+	.to-base10-card, .from-decimal-card{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media screen and ( min-width: 767px ){
+	.convt-card{
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
 #result_div, #btn_div, #from_dec_result_div, #decimal_result_hr, #from_dec_btn_div{
 	display: none;
 }

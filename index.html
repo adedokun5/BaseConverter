@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -14,23 +14,24 @@
 			<h1> Number Base Converter </h1>
 		</header>
 
-		<section class="d-md-flex justify-content-around convt-card mt-5">
-			<div class="col-sm-9 col-md-5 m-auto">
-				<div class="card m-auto mb-5 mb-md-0">
+		<section class="convt-card mt-5">
+			<div class="col-md-5 mb-5 mb-md-0">
+				<div class="card to-base10-card mb-md-0">
 					<div class="card-header bg-info text-white">
 						<h3 class="p-2 text-center fst-italic">Convert from base( 2 - 9 ) to a number in base 10 only.</h3>
 					</div>
 
 				  <div class="card-body">
-						<span class="text-secondary fw-bold h5 mt-2">
-							Convert 
+				  	<span id="decimal_msg" class="text-danger h6"></span> 
+						<span class="text-secondary fw-bold d-block h5 mt-2">
+							Convert
 							<div class="col-6 col-md-5 col-lg-4 col-xl-5 d-inline-block">
-								<span id="decimal_msg" class="text-danger h6"></span>
 								<input type="text" name="main_value" id="main_value" oninput="validateToDecimalFields()" class="form-control" >
 							</div> 
 							base 
+							<span id="base_msg" class="text-danger d-block h6"></span>
 							<div class="col-2 col-lg-3 d-inline-block">
-								<span id="base_msg" class="text-danger h6"></span>
+								
 								<input type="text" name="old_base" id="old_base" class="form-control" oninput="validateToDecimalFields()">  
 							</div>
 							<br class="d-none d-lg-block"> to a number in base 10
@@ -54,12 +55,13 @@
 				</div>
 			</div>
 
-			<div class="card col-sm-9 col-md-5 m-auto">
+			<div class="card from-decimal-card col-md-5">
 				<div class="card-header bg-info text-white">
 					<h3 class="mb-3 text-center fst-italic">Convert from base 10 to a number in base( 2 - 9 ) only.</h3>
 				</div>
 
 			  <div class="card-body">
+			  	<span id="from_decimal_msg" class="text-danger d-block h6"></span>
 					<span class="text-secondary fw-bold h5 mt-2">
 						Convert 
 						<div class="col-6 col-md-5 col-lg-4 col-xl-5 d-inline-block">
@@ -67,7 +69,6 @@
 						</div> 
 						base 10 to a number in base
 						<div class="col-2 col-lg-3 d-inline-block mt-1">
-							<span id="from_decimal_msg" class="text-danger h6"></span>
 							<input type="text" name="new_base" id="new_base" class="form-control" oninput="validateFromDecimalFields()">  
 						</div>
 					</span>
